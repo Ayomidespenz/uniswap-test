@@ -1,5 +1,6 @@
-import { ethers } from "hardhat";
-import { impersonateAccount } from "@nomicfoundation/hardhat-network-helpers";
+const hre = require("hardhat");
+const { ethers } = hre;
+const { impersonateAccount } = require("@nomicfoundation/hardhat-network-helpers");
 
 async function main() {
   const AssetHolder = "0xfADea771FF54329e874d4578B88782c0327B97ed";
