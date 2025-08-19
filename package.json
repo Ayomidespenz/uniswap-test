@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "commonjs",
+  "type": "module",
   "scripts": {
     "node": "hardhat node",
     "deploy": "hardhat run scripts/Lock.ts --network localhost",
@@ -15,21 +15,24 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@nomicfoundation/hardhat-ethers": "^4.0.0",
-    "@nomicfoundation/hardhat-ignition": "^3.0.0",
-    "@nomicfoundation/hardhat-network-helpers": "^3.0.0",
-    "@nomicfoundation/hardhat-toolbox-mocha-ethers": "^3.0.0",
+    "@nomicfoundation/hardhat-ethers": "^3.0.4",
+    "@nomicfoundation/hardhat-network-helpers": "^2.0.0",
+    "@nomicfoundation/hardhat-toolbox": "^2.0.2",
+    "@typechain/ethers-v6": "^0.5.0",
+    "@typechain/hardhat": "^9.0.0",
     "@types/chai": "^4.3.20",
     "@types/chai-as-promised": "^8.0.2",
     "@types/mocha": "^10.0.10",
-    "@types/node": "^22.17.2",
+    "@types/node": "^20.0.0",
     "chai": "^5.3.1",
     "dotenv": "^17.2.1",
     "ethers": "^6.15.0",
-    "forge-std": "github:foundry-rs/forge-std#v1.9.4",
-    "hardhat": "^3.0.0",
+    "hardhat": "^2.19.4",
+    "hardhat-toolbox": "^2.0.0",
     "mocha": "^11.7.1",
-    "typescript": "~5.8.0"
+    "ts-node": "^10.9.2",
+    "typechain": "^8.3.1",
+    "typescript": "^5.8.0"
   },
   "engines": {
     "node": ">=18.0.0"
